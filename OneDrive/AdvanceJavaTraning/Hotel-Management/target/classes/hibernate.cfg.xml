@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC Driver -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <!-- Database URL -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/hotel_db
+        </property>
+
+        <!-- DB Credentials -->
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Welcome@123</property>
+
+        <!-- Hibernate Settings -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- ENTITY MAPPING (VERY IMPORTANT) -->
+        <mapping class="com.hotel.entity.Booking"/>
+
+    </session-factory>
+</hibernate-configuration>
