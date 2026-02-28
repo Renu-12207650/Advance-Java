@@ -1,0 +1,54 @@
+<!-- 
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<hibernate-configuration>
+		<session-factory>
+			<property name="connection.driver.class">com.mysql.cj.jdbc.Driver</property>y
+			<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_crud</property>
+			<property name="connection.username">root</property>
+			<property name="connection.password"> abhi15</property>
+			
+			<property name="hdm2dd1.auto">update</property>
+			<property name="show_sql">true</property>
+			
+			<mapping class="com.lpu.entities.User"/>
+			
+		</session-factory>>
+	
+	</hibernate-configuration>
+-->
+
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/hibernate_crud
+        </property>
+
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <property name="hibernate.connection.password">
+            abhi15
+        </property>
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="com.lpu.entities.User"/>
+        <mapping class="com.lpu.entities.Employee"/>
+
+    </session-factory>
+</hibernate-configuration>
