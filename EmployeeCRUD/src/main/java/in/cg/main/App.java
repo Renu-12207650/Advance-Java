@@ -9,11 +9,11 @@ public class App
     {
     	EmployeeDAO dao = new EmployeeDAO();
     	
-        dao.save(new Employee(1, "Abhinav", "IT", 50000));
+        dao.save(new Employee(1, "RenuDhankhar", "IT", 80000));
 
         dao.getAll().forEach(System.out::println);
 
-        dao.updateSalary(1, 80000);
+        dao.updateSalary(1, 90000);
 
         dao.delete(1);
     }
