@@ -6,7 +6,7 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost:3306/employee_crud
+            jdbc:mysql://localhost:3306/employeedb
         </property>
 
         <property name="hibernate.connection.username">
@@ -14,7 +14,7 @@
         </property>
 
         <property name="hibernate.connection.password">
-            abhi15
+            Welcome@123
         </property>
 
         <property name="hibernate.dialect">
