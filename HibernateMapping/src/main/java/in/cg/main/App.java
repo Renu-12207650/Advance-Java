@@ -21,13 +21,13 @@ public class App
     	// for bank and customers one to many mapping ->
     	
     	Customers c1 = new Customers();
-    	c1.setCustomerName("ABHINAV");
+    	c1.setCustomerName("RenuDhankhar");
     	Customers c2= new Customers();
-    	c2.setCustomerName("ABHI");
+    	c2.setCustomerName("Renu");
     	
     	Bank b = new Bank();
     	
-    	b.setName("Punjab National bank");
+    	b.setName("State bank of india");
     	b.setCustomer(List.of(c1, c2));
     	
     	session.save(b);
